@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="bg-container" id="container">
+      <h1 class="heading">BOOK TICKET</h1>
+      <div>
+        <form id="addUserForm" name="feedback" class="form">
+          <img
+            src="https://images.railyatri.in/ry_images_prod/Homepage-BannerNew-1592207921.jpg"
+            class="image"
+          />
+
+          <div class="card">
+            <div>
+              <label for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="enter your name"
+              />
+              <p class="errormsg" id="nameErrMsg"></p>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="text"
+                class="form-control"
+                placeholder="enter email"
+              />
+              <p class="errormsg" id="emailErrMsg"></p>
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="enter password"
+              />
+              <p class="errormsg" id="passwordErrMsg"></p>
+            </div>
+
+            <div>
+              <button
+                id="loginbutton"
+                type="text"
+                class="btn btn-primary button"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <p id="nameErrMsg"></p>
+    </div>
+
+    <div class="buttonpage">
+      <div>
+        <button class="btn btn-primary" id="logout">logout</button>
+      </div>
+    </div>
+    <div id="sub" class="d-none col-12 second-container">
+      <div>
+        <div>
+          <h1 id="head" class="d-flex flex-column justify-content-center mt-2">
+            .
+          </h1>
+          <h1 id="totalTickets" class="mt-2"></h1>
+
+          <h1 class="mt-2">Book your seats</h1>
+
+          <div class="numbers">
+            <span class="ml-4">1</span>
+            <span class="ml-3">2</span>
+            <span class="ml-3">3</span>
+            <span class="ml-4">4</span>
+            <span class="ml-3">5</span>
+            <span class="ml-3">6</span>
+          </div>
+          <br />
+
+          <span class="imag">a</span>
+          <span class="material-symbols-outlined imagest"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima ml-3" id="chair4">
+            chair
+          </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span><br />
+          <span class="imag">b</span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima" id="chair3"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined imagest ml-3"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span><br />
+          <span class="imag">c</span>
+          <span class="material-symbols-outlined ima" id="chair1"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima ml-3"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <br />
+
+          <span class="imag">d</span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined imagest"> chair </span>
+          <span class="material-symbols-outlined ima ml-3"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima" id="chair2"> chair </span
+          ><br />
+
+          <span class="imag">e</span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined imagest"> chair </span>
+          <span class="material-symbols-outlined ml-3"> chair </span>
+          <span class="material-symbols-outlined ima"> chair </span>
+          <span class="material-symbols-outlined ima" id="chair2"> chair </span
+          ><br />
+        </div>
+        <div>
+          <span class="material-symbols-outlined ml-3 mt-3">chair</span>
+          <span>available</span>
+          <span class="material-symbols-outlined ml-3 mt-3 boo">chair</span>
+          <span class="mb-2 booked">Booked</span>
+        </div>
+        <div></div>
+
+        <h1 class="fill">Please fill details to book</h1>
+
+        <form name="Feedback">
+          <div class="mb-3">
+            <label for="inputname" class="form-label" text-align="center"
+              >Name</label
+            >
+            <input
+              type="text"
+              name="Name"
+              class="form-control"
+              id="inputname"
+              placeholder="enter your name"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="inputage" class="form-label" text-align="center"
+              >Age</label
+            >
+            <input
+              type="input"
+              name="Name"
+              class="form-control"
+              id="inputage"
+              placeholder="enter your age"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="phonenumber" class="form-label" text-align="center"
+              >Phonenumber</label
+            >
+            <input
+              type="input"
+              name="Name"
+              class="form-control"
+              id="phonenumber"
+              placeholder="enter your phonenumber"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label" text-align="center"
+              >Address</label
+            >
+            <input
+              type="input"
+              name="Name"
+              class="form-control"
+              id="address"
+              placeholder="enter your address"
+            />
+          </div>
+
+          <h1>Gender</h1>
+          <div class="gender">
+            <input id="genderMale" value="Male" name="gender" type="radio" />
+            <label class="ml-2" for="genderMale">Male</label>
+            <br />
+
+            <input
+              class="ml-3"
+              id="genderFemale"
+              value="Female"
+              name="gender"
+              type="radio"
+            />
+            <label class="ml-2" for="genderFemale">Female</label>
+            <br />
+          </div>
+        </form>
+
+        <div>
+          <p id="message"></p>
+        </div>
+      </div>
+
+      <div class="book">
+        <button class="btn btn-primary" id="button">BOOK TICKET</button>
+      </div>
+    </div>
+  </body>
+</html>
